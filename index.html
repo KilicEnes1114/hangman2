@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adam Asmaca - Bilişim Temalı</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+      text-align: center;
+    }
+    #harfler button {
+      margin: 3px;
+      padding: 8px 12px;
+      font-size: 16px;
+    }
+    #indirmeBtn {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      padding: 10px 15px;
+      background: #222;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    #indirmeBtn:hover {
+      background: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🖥️ Enes Kılıç by <a href="https://www.entegrasyonbilisim.com/" target="_blank">entegrasyonbilisim.com</a></h1>
+
+  <div id="baslangic">
+    <input type="text" id="isimInput" placeholder="Adını yaz veya boş bırak...">
+    <button onclick="baslat()">Oyuna Başla</button>
+  </div>
+
+  <div id="oyun" style="display:none;">
+    <div class="kelime" id="kelime"></div>
+    <div class="harfler" id="harfler"></div>
+
+    <div style="margin-top: 10px;">
+      <button id="harfAlBtn" onclick="harfAl()">🪄 Harf Al (1)</button>
+      <button id="harfDegistirBtn" onclick="harfDegistir()">🔄 Olmayan Harfleri Çıkar (2)</button>
+    </div>
+
+    <pre class="adam" id="adam"></pre>
+    <div class="anlikSkor" id="anlikSkor"></div>
+  </div>
+
+  <div id="kalanHakk" style="position: fixed; top: 10px; right: 10px; background: #222; color: #fff; padding: 8px 12px; border-radius: 5px; font-weight: bold;">
+    Kalan Kelime Hakkı: 3
+  </div>
+
+  <div id="skorbordAlani">
+    <h2>🏆 Skorbord</h2>
+    <ol id="skorListesi"></ol>
+  </div>
+
+  <!-- Skorları indir butonu -->
+  <button id="indirmeBtn">Skorları İndir</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

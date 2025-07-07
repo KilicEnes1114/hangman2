@@ -1,0 +1,79 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 20px;
+  color: #222;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+input, button {
+  font-size: 18px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+}
+
+.kelime {
+  font-size: 2.5rem;
+  letter-spacing: 12px;
+  margin: 30px auto;
+}
+
+.harfler {
+  margin-top: 20px;
+}
+
+.harfler button {
+  margin: 5px;
+  font-size: 18px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  transition: background-color 0.3s;
+}
+
+.harfler button:hover:not(:disabled) {
+  background-color: #cce5ff;
+}
+
+.harfler button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.adam {
+  font-size: 2rem;
+  margin-top: 20px;
+  white-space: pre;
+  font-family: monospace;
+}
+
+.anlikSkor {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #444;
+}
+
+#skorbordAlani {
+  margin-top: 40px;
+  text-align: center;
+}
+
+#skorListesi {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#skorListesi li {
+  font-size: 1.1rem;
+  margin: 4px 0;
+}
